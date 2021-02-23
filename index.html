@@ -10,96 +10,114 @@
 </head>
 
 <body>
-    <form>
-        <section class="information">
-            <h1 class="general">General Information</h1>
-            <p>
-                <label for="title">Title</label><br>
-                <select name="title" id="title">
-
-                </select>
-            </p>
-            <div class="inline">
-                <div class="first taille">
-                    <label for="firstname">First Name</label><br>
-                    <input id="firstname" type="text">
-                </div>
-                <div class="last taille">
-                    <label for="lastname">Last Name</label>
-                    <input id="lastname" type="text">
-                </div>
-            </div>
-            <p>
-                <label for="position">Position</label><br>
-                <select name="position" id="position">
-
-                </select>
-            </p>
-            <p>
-                <label for="company">Company</label><br>
-                <input id="company" type="text">
-            </p>
-            <div class="inline">
-                <div class="busarena taille">
-                    <label for="business">Business Arena</label><br>
-                    <input id="business" type="text">
-                </div>
-                <div class="emploie taille">
-                    <label for="employees">Employées</label><br>
-                    <input id="employees" type="text">
-                </div>
-            </div>
-        </section>
-
-        <section class="details">
-            <h1>Contact Details</h1>
-            <p>
-                <label for="street">Street + Nr</label><br>
-                <input id="street" type="text">
-            </p>
-            <p>
-                <label for="additional">Additional Information</label><br>
-                <input id="additional" type="text">
-            <p>
-            <div class="inline">
-                <div class="zipcode taille">
-                    <label for="zipcode">Zip Code</label><br>
-                    <input id="zipcode" type="text">
-                </div>
-                <div class="Place taille">
-                    <label for="place">Place</label><br>
-                    <select name="place" id="place">
-    
+    <div class="formulaire">
+        <form>
+            <section class="information">
+                <h1 class="general">General Information</h1>
+                <p>
+                    <select name="title" id="title">
+                        <option hidden>Title</option>
+                        <option>Web Developer</option>
+                        <option>Android Developer</option>
                     </select>
+                </p>
+                <div class="inline">
+                    <div class="first">
+                        <input id="firstname" type="text" placeholder="First Name">
+                    </div>
+                    <div class="last droite">
+                        <input id="lastname" type="text" placeholder="Last Name">
+                    </div>
                 </div>
-            </div>
-            <p>
-                <label for="country">Country</label><br>
-                <select name="country" id="country">
+                <p>
+                    <select name="position" id="position">
+                        <option hidden>Position</option>
+                        <option>Fullstack Developer</option>
+                        <option>Back-End Developer</option>
+                        <option>Front-End Developer</option>
+                    </select>
+                </p>
+                <p>
+                    <input id="company" type="text" placeholder="Company">
+                </p>
+                <div class="inline">
+                    <div class="busarena">
+                        <input id="business" type="text" placeholder="Business Arena">
+                    </div>
+                    <div class="emploie droite">
+                        <select id="employees">
+                            <option hidden>Employées</option>
+                            <option>Kinshasa Digital</option>
+                            <option>Kinshasa Digital Academy</option>
+                            <option>Orange</option>
+                            <option>Amazon</option>
+                            <option>Facebook</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
 
-                </select>
-            </p>
-            <div class="inline">
-                <div class="codeplus taille">
-                    <label for="code">Code +</label><br>
-                    <input id="code" type="text">
+            <section class="details">
+                <h1>Contact Details</h1>
+                <p>
+                    <input id="street" type="text" placeholder="Street + Nr">
+                </p>
+                <p>
+                    <input id="additional" type="text" placeholder="Additional Information">
+                <p>
+                <div class="inline">
+                    <div class="zipcode gauche">
+                        <input id="zipcode" type="text" placeholder="Zip Code">
+                    </div>
+                    <div class="Place droite">
+                        <select name="place" id="place">
+                            <option hidden>Place</option>
+                            <option>Lemba</option>
+                            <option>Lingwala</option>
+                            <option>Ngaliema</option>
+                            <option>Gombe</option>
+                            <option>Masina</option>
+                            <option>Limete</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="phonenumber taille">
-                    <label for="phone">Phone Number</label><br>
-                    <input id="phone" type="number">
+                <p>
+                    <select name="country" id="country">
+                        <option hidden>Country</option>
+                        <option>DR Congo</option>
+                        <option>France</option>
+                        <option>Canada</option>
+                        <option>Cameroon</option>
+                    </select>
+                </p>
+                <div class="inline">
+                    <div class="codeplus">
+                        <input id="code" type="text" placeholder="Code +">
+                    </div>
+                    <div class="phonenumber droite">
+                        <input id="phone" type="number" placeholder="Phone Number">
+                    </div>
                 </div>
-            </div>
-            <p>
-                <label for="mail">Your Email</label><br>
-                <input id="mail" type="email">
-            </p>
-            <p class="radio">
-                <input type="radio"> I do accept the <a href=""><strong>Terms and
-                Conditions</strong></a> of your site.
-            </p>
-            <input type="submit" value="Register Badge">
-        </section>
-    </form>
+                <p>
+                    <input id="mail" type="email" placeholder="Your Email">
+                </p>
+                <div class="radio">
+                    <div class="radiodiv">
+                        <p><input type="radio" id="radio"></p>
+                    </div>
+                    <p class="textradio">
+                        <label for="radio">I do accept the <a href=""><strong> Terms and
+                                    Conditions</strong></a><br> <span>of your site.</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="boutton">
+                    <input type="submit" value="Register Badge">
+                </div>
+            </section>
+        </form>
+    </div>
+
 
 </body>
 

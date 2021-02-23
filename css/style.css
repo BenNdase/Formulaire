@@ -1,50 +1,57 @@
 /*---------------style en commun---------------*/
+@font-face{
+    font-family: "Air Factory";
+    src: url("../font/Air\ Factory\ Rounded\ Light.ttf");
+}
 * {
     box-sizing: border-box;
 }
 body{
     padding: 0;
     margin: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-image: linear-gradient(to bottom right, #8bc0ec, #9599e2);
     background-repeat: no-repeat;
-    font-size: 14px;
+    font-family: 'Air Factory', sans-serif;
+    font-size: 16px;
 }
+
 form{
-    margin-top: 40px;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 55px;
+    width: 55%;
+    height: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
     display: flex;
     flex-direction: row;
-    border-radius: 50px;
     box-shadow: 0px 0px 20px -10px black;
-    width: 1020px;
 }
 h1{
-    font-size: 16px;
+    font-size: 17px;
 }
 label{
     font-size: 14px;
 }
 
 select,input{
-    width: 412px ;
+    width: 100% ;
 }
-
+input:focus, select:focus{
+    outline: none;
+}
 .inline{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
-.inline input{
-    width: 200px;
+.inline .droite{
+    padding-left: 15px;
 }
-.inline select{
-    width: 200px;
-}
-.taille{
-    padding-right: 10px;
+.droite select{
+    width: 120%;
+    margin-top: -2px;
 }
 a{
     color: white;
@@ -52,17 +59,25 @@ a{
 
 /* ---------------------style General information--------------------*/
 .information{
+    width: 50%;
     background-color: white;
-    width: 510px;
-    height: 450px;
-    padding: 60px;
+    padding: 48px;
     padding-top: 20px;
-    border-top-left-radius: 20px 20px;
-    border-bottom-left-radius: 20px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 .information input[type=text],select{
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #bbbaba;
+    color: #8e8e8e;
+}
+.information input, select{
+    padding: 10px;
+    padding-left: 3px;
+}
+.information input::placeholder,select{
+    color: #8e8e8e;
+    padding-left: 3px;
 }
 .information select{
     background-color: white;
@@ -70,46 +85,80 @@ a{
 .general{
     color: #4479b2;
 }
+.busarena{
+    width: 60%;
+}
+.emploie{
+    width: 34%;
+}
 
 /* --------------------style General information-------------------------*/
 .details{
+    width: 50%;
     background-color: #4f54d4;
-    width: 510px;
-    height: 450px;
-    padding: 60px;
+    padding: 48px;
     padding-top: 20px;
     color: white;
-    border-top-right-radius: 20px 20px;
-    border-bottom-right-radius: 20px 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
-.details select{
+.details select, input{
     color: white;
+    padding: 10px;
+    padding-left: 3px;
+}
+.details input::placeholder{
+    color: white;
+    padding-left: 3px;
+}
+.details input[type=submit]{
+    color: black;
 }
 .details input[type=text], .details input[type=number], .details input[type=email]{
     border: none;
-    border-color: white;
     background-color: #4f54d4;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #7566f9;
 }
 .details select{
     background-color: #4f54d4;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #7566f9;
+}
+.gauche{
+    width: 30%;
+}
+.Place{
+    width: 59%;
+}
+.radio{
+    display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+}
+.radio input{
+    width: 13px;
+    appearance: none;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 6px;
+}
+.radio input:checked{
+    width: 13px;
+    border: 2px solid rgb(79,84,212);
+    background-color: white;
+    padding: 4px;
+    box-shadow: 0 0 0 0.1em rgb(235, 235, 235);
+}
+.radio .textradio{
+    padding-left: 10px;
 }
 .details input[type=submit]{
-    width: 100px;
+    width: 120px;
     height: 30px;
     border-radius: 20px;
     border: none;
     font-size: 12px;
     font-weight: bold;
-}
-.radio{
-    display: flex;
-    flex-direction: row;
-}
-.radio input{
-    width: 10px;
-}
-.radio p{
-    padding: 10px;
+    margin-top: -10px;
+    color: #363636;
+    padding: 5px 5px 5px 5px ;
 }
