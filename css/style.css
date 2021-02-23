@@ -129,6 +129,9 @@ a{
 .Place{
     width: 59%;
 }
+.phonenumber{
+    width: 70%;
+}
 .radio{
     display: flex;
     flex-direction: row;
